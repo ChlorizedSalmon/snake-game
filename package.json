@@ -1,0 +1,37 @@
+{
+  "private": true,
+  "description": "뱀게임 프론트엔드",
+  "scripts": {
+    "build": "webpack",
+    "start": "webpack-dev-server --hot"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChlorizedSalmon/snake-game.git"
+  },
+  "author": "daoml <mjy9088@gmail.com> (https://github.com/daoml)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ChlorizedSalmon/snake-game/issues"
+  },
+  "homepage": "https://github.com/ChlorizedSalmon/snake-game#readme",
+  "devDependencies": {
+    "@babel/core": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.2.0",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "node-sass": "^4.12.0",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.0.0",
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.8",
+    "webpack-dev-server": "^3.8.0"
+  }
+}
