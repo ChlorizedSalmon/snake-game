@@ -1,20 +1,21 @@
 import React from "react";
+import {
+    BrowserRouter as Router,
+    Route,
+    Switch,
+} from 'react-router-dom';
 
 import "./styles/base.css";
-import "./styles/splash.scss";
+import NotFound from "./NotFound.jsx";
+import Splash from "./Splash.jsx";
 
 class App extends React.Component {
     render() {
         return (
-            <div className="splash">
-                <hgroup>
-                    <h1>뱀 게임</h1>
-                </hgroup>
-                <nav>
-                    <a>혼자 하기</a>
-                    <a>온라인</a>
-                </nav>
-            </div>
+            <Switch>
+                <Route exact path="/" component={Splash} />
+                <Route component={NotFound} />
+            </Switch>
         );
     }
 }
