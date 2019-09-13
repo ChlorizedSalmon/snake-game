@@ -1,5 +1,8 @@
 .field {
     display: table;
+    width: 100vmin;
+    height: 100vmin;
+    table-layout: fixed;
 
     .row {
         display: table-row;

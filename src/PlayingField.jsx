@@ -9,7 +9,7 @@ class PlayingField extends React.Component {
                 {this.props.field.map((row, index) => (
                     <div key={index} className="row">
                         {row.map((cell, index) => (
-                            <div key={index} className="cell">TEST</div>
+                            <div key={index} className="cell"></div>
                         ))}
                     </div>
                 ))}
