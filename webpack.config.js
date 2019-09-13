@@ -11,6 +11,7 @@ module.exports = {
   },
   mode: "development",
   devServer: {
+    historyApiFallback: true,
     contentBase: path.resolve("./build"),
     index: "index.html",
     port: 12345
