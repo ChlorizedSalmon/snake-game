@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './styles/game.scss';
+import './styles/game.sass';
 import PlayingField from './PlayingField.jsx';
 
 const width = 10,
