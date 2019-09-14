@@ -1,19 +1,14 @@
 import React from 'react';
 
-import './styles/field.scss';
-
 class PlayingField extends React.Component {
+  constructor(props) {
+    super(props);
+    this.canvas = React.createRef();
+  }
+
   render() {
     return (
-      <div className="field">
-        {this.props.field.map((row, index) => (
-          <div key={index} className="row">
-            {row.map((cell, index) => (
-              <div key={index} className="cell"></div>
-            ))}
-          </div>
-        ))}
-      </div>
+      <canvas ref={this.canvas} className="field" />
     );
   }
 }

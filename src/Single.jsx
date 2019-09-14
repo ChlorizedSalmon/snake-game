@@ -15,11 +15,12 @@ class Single extends React.Component {
       ),
     };
   }
+
   render() {
     return (
       <div className="game">
         <div>
-          <PlayingField class="field" field={this.state.field} />
+          <PlayingField field={this.state.field} />
         </div>
       </div>
     );
