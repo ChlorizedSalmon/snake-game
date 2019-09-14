@@ -6,7 +6,7 @@ import PlayingField from './PlayingField.jsx';
 const width = 10,
   height = 10;
 
-class Splash extends React.Component {
+class Single extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -19,11 +19,11 @@ class Splash extends React.Component {
     return (
       <div className="game">
         <div>
-          <PlayingField field={this.state.field} />
+          <PlayingField class="field" field={this.state.field} />
         </div>
       </div>
     );
   }
 }
 
-export default Splash;
+export default Single;
