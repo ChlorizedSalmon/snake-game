@@ -16,7 +16,7 @@ module.exports = {
     index: 'index.html',
     port: 12345,
   },
-  resolve: { extensions: ['.js', '.jsx'] },
+  resolve: { extensions: ['.js', '.jsx', '.ts', '.tsx'] },
   module: {
     rules: [
       {
