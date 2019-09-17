@@ -1,6 +1,17 @@
+import Component from './game/Component';
+import Main from './game/Main';
+
 class Game {
+  main: Component;
+
+  constructor() {
+    this.main = new Main();
+  }
+
   public render(canvas: HTMLCanvasElement) {
-    console.log('test');
+    const context: CanvasRenderingContext2D | null = canvas.getContext('2d');
+    if (!context) return;
+    this.main.render(context);
   }
 }
 
