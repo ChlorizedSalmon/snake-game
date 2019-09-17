@@ -11,18 +11,11 @@ class PlayingField extends React.Component<Props, State> {
   private canvas: React.RefObject<HTMLCanvasElement>;
   private requestId: number = 0;
   private game: Game = new Game();
-  private draw: FrameRequestCallback | null = null;
+  private draw: FrameRequestCallback;
 
   constructor(props: Props) {
     super(props);
     this.canvas = React.createRef();
-  }
-
-  render(): JSX.Element {
-    return <canvas ref={this.canvas} className="field" />;
-  }
-
-  componentDidMount() {
     this.draw = () => {
       const canvas = this.canvas.current;
       if (canvas) {
@@ -32,6 +25,15 @@ class PlayingField extends React.Component<Props, State> {
         this.requestId = requestAnimationFrame(this.draw);
       }
     };
+  }
+
+  render(): JSX.Element {
+    return (
+      <canvas ref={this.canvas} className="field" />
+    );
+  }
+
+  componentDidMount() {
     this.requestId = requestAnimationFrame(this.draw);
   }
 
