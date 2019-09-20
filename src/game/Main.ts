@@ -1,7 +1,7 @@
 import Component from './Component';
 
 class Main implements Component {
-  render(canvas: CanvasRenderingContext2D) {
+  render(context: CanvasRenderingContext2D, w: number, h: number) {
     console.log('test');
   }
 }

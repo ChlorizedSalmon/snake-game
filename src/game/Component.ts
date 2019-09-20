@@ -1,5 +1,5 @@
 interface Component {
-  render(canvas: CanvasRenderingContext2D): void;
+  render(context: CanvasRenderingContext2D, w: number, h: number): void;
 }
 
 export default Component;
