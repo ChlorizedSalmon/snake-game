@@ -17,11 +17,7 @@ class Single extends React.Component {
   render() {
     const { field } = this.state;
     return (
-      <div className="game">
-        <div>
-          <PlayingField field={field} />
-        </div>
-      </div>
+      <PlayingField field={field} />
     );
   }
 }
