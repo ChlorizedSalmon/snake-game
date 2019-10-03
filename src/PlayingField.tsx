@@ -16,15 +16,17 @@ class PlayingField extends React.Component<Props, State> {
   constructor(props: Props) {
     super(props);
     this.canvas = React.createRef();
-    this.draw = () => {
-      const canvas = this.canvas.current;
-      if (canvas) {
-        this.game.render(canvas);
-      }
-      if (this.draw) {
-        this.requestId = requestAnimationFrame(this.draw);
-      }
-    };
+    this.draw = this.draw_.bind(this);
+  }
+
+  private draw_() {
+    const canvas = this.canvas.current;
+    if (canvas) {
+      this.game.render(canvas);
+    }
+    if (this.draw) {
+      this.requestId = requestAnimationFrame(this.draw);
+    }
   }
 
   render(): JSX.Element {
